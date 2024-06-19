@@ -1,0 +1,111 @@
+html, body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background: url(img/capa.png),
+                url(img/ruido.png),
+                linear-gradient(50deg, #3cdf2e, #000);
+    background-attachment: fixed;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    font-style: italic;
+    margin: 10px 0;
+    border-radius: 15px;
+    background-color: #3cdf2e;
+    color: #333;
+}
+
+h1:hover {
+    background-color: #333;
+    color: #3cdf2e;
+    box-shadow: #333 0 5px 5px 0;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+  transition: transform 2s;
+}
+
+.container {
+    text-align: center;
+}
+
+a span i {
+    font-size: 3.5rem;
+    padding: 3.5rem;
+    color: #3cdf2e;
+}
+
+#links a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: #3cdf2e;
+    border: solid 0.15rem #1f242d;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: #1f242d;
+    margin: 1.8rem 0.5rem;
+    transition: 0.5s ease;
+}
+
+#links a:hover {
+    background-color: #3cdf2e;
+    color: #323946;
+    box-shadow: 0 0 0.3rem;
+    text-decoration: none;
+}
+
+.animacao-3d {
+    animation: rotacao-3d 2s ease-in-out;
+}
+
+@keyframes rotacao-3d {
+    0% {
+      transform: rotateX(0deg) rotateY(0deg);
+  }
+  50% {
+      transform: rotateX(180deg) rotateY(180deg);
+  }
+  100% {
+      transform: rotateX(360deg) rotateY(360deg);
+  }
+  
+}
+
+
+@media (max-width: 768px) {
+    a span i {
+        font-size: 2.5rem;
+    }
+
+    #links a {
+        width: 2rem;
+        height: 2rem;
+        font-size: 1.5rem;
+        margin: 1rem 0.3rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .carousel-item img {
+      width: 100%;
+      height: 80vh; /* Ajuste a altura conforme necessário */
+      object-fit: cover; /* Isso ajuda a manter a proporção das imagens */
+    }
+
+    #links a {
+        width: 3rem;
+        height: 3rem;
+        font-size: 2.5rem;
+        margin: 2rem 1rem;
+    }
+}
