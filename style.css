@@ -6,7 +6,7 @@ html, body {
 body {
     background: url(img/capa.png),
                 url(img/ruido.png),
-                linear-gradient(50deg, #3cdf2e, #000);
+                linear-gradient(50deg, #dbd827, #000);
     background-attachment: fixed;
     font-family: Helvetica, Arial, sans-serif;
 }
@@ -30,6 +30,8 @@ h1:hover {
   height: 60vh;
   object-fit: cover;
   transition: transform 2s;
+ /*  border: solid red ; */
+
 }
 
 .container {
